@@ -1,0 +1,24 @@
+{
+  "listName" : "Avengers",
+  "homeTown" : "Earth",
+  "formed" : 2012,
+  "secretBase" : "Stark Tower",
+  "active" : true,
+  "members" : [
+    {
+      "name" : "Iron Man",
+      "secretIdentity" : "Tony Stark",
+      "phoneNumber" : "555777333"
+    },
+    {
+      "name" : "Black Widow",
+      "secretIdentity" : "Natasha Romanoff",
+      "phoneNumber" : "111333999"
+    },
+    {
+      "name" : "Captain America",
+      "secretIdentity" : "Steve Rogers",
+      "phoneNumber" : "11111111111111111"
+    }
+  ]
+}
