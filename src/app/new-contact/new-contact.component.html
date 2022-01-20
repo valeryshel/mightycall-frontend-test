@@ -34,7 +34,18 @@
       </div>
     </div>
 
-    <button class="btn" type="button">Add new field</button>
+    <div class="form-control" formGroupName="newInput">
+      <p>Add new field</p>
+      <label>Phone Number</label>
+      <input type="radio" placeholder="Phone Number" formControlName="number" />
+      <label>Text</label>
+      <input type="radio" placeholder="Text" formControlName="text" />
+      <label>Link</label>
+      <input type="radio" placeholder="Link" formControlName="link" />
+      <div class="validation"></div>
+    </div>
+
+    <button class="btn" type="button" (click)="addField()">Add new field</button>
     <button class="btn" type="submit" [disabled]="form.invalid">
       Save contact
     </button>
