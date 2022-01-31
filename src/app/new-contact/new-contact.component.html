@@ -45,7 +45,19 @@
       <div class="validation"></div>
     </div>
 
-    <button class="btn" type="button" (click)="addField()">Add new field</button>
+    <div class="card" formGroupName="fields">
+      <h2>Ваши навыки</h2>
+      <button class="btn" type="button" (click)="addField()">Добавить умение</button>
+
+      <div
+      class="form-control"
+      *ngFor="let control of fields.controls; let idx = index"
+      >
+        <label>Умение{{idx + 1}}</label>
+        <input type="text" [formControlName]="idx">
+      </div>
+    </div>
+
     <button class="btn" type="submit" [disabled]="form.invalid">
       Save contact
     </button>
