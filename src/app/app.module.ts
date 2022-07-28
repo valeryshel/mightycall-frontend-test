@@ -4,9 +4,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
-import { NewContactComponent } from './new-contact/new-contact.component';
+import { NewContactComponent } from './components/new-contact/new-contact.component';
 import { HttpClientModule } from '@angular/common/http'
-import { ContactListComponent } from './contact-list/contact-list.component';
+import { ContactListComponent } from './components/contact-list/contact-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { ContactListComponent } from './contact-list/contact-list.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

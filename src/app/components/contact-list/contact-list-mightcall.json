@@ -1,0 +1,16 @@
+{
+  "users" : [
+    {
+      "name" : "Bill Gates",
+      "phoneNumber" : "+1 917 123 45 66"
+    },
+    {
+      "name" : "Sergey Brin",
+      "phoneNumber" : "+1 833 322 66 54"
+    },
+    {
+      "name" : "Mark Zukerberg",
+      "phoneNumber" : "+1 888 945 76 08"
+    }
+  ]
+}

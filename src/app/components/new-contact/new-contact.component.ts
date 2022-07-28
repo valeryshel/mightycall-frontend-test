@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Contact } from '../contact-list/contact-list.component';
 
 @Component({
   selector: 'app-new-contact',
@@ -8,6 +9,8 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class NewContactComponent implements OnInit {
   title = 'New Contact';
+
+
   constructor() { }
   form!: FormGroup;
 
@@ -43,6 +46,9 @@ export class NewContactComponent implements OnInit {
     const field = new FormControl('', Validators.required);
     (this.form.get('fields') as FormArray).push(field);
   }
+
+
+
 }
 
 

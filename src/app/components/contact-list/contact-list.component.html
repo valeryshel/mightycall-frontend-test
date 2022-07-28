@@ -1,0 +1,37 @@
+<div class="container">
+  <h1>Contact list</h1>
+
+  <div class="card">
+    <div class="form-control">
+      <input type="text" placeholder="Contact Name" [(ngModel)]="contactName">
+    </div>
+    <button class="btn" (click)="addContact()">Add Contact</button>
+    <button class="btn" (click)="fetchContacts()">Загрузить</button>
+  </div>
+
+  <hr />
+  <div *ngIf="!loading; else loadingBlock">
+    <div *ngIf="contacts.length; else noContacts">
+      <div class="card" *ngFor="let contact of contacts">
+        <p>
+          <span>{{ contact.name }}</span> <br />
+          <span >{{contact.id}}</span> <br>
+          <span>{{ contact.phone }}</span>
+          <span>
+            <!-- <button class="btn btn-danger"  (click)="removeContact(contacts.name)">Удалить</button> -->
+            <button class="btn">Завершить</button>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <ng-template #noContacts>
+      <p>Нет элементов</p>
+    </ng-template>
+
+  </div>
+
+  <ng-template #loadingBlock>
+    <p>Загрузка...</p>
+  </ng-template>
+</div>
